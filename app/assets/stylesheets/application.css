@@ -18,3 +18,7 @@
  *= require_tree ./controls
  *= require_tree ./views
  */
+
+.WelcomeScreen {
+  background-color: aliceblue;
+}
