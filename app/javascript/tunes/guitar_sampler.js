@@ -147,13 +147,6 @@ partNode.loop = true
 const instrument = [
   {
     id: generateUniqId(),
-    name: 'Sequencer',
-    type: 'Sequencer',
-    node: partNode,
-    settings: partSettings
-  },
-  {
-    id: generateUniqId(),
     name: 'Guitar Sampler',
     type: 'Sampler',
     node: samplerNode,
@@ -165,6 +158,13 @@ const instrument = [
     type: 'FreeverbEffect',
     node: freeverbNode,
     settings: freeverbSettings
+  },
+  {
+    id: generateUniqId(),
+    name: 'Sequencer',
+    type: 'Sequencer',
+    node: partNode,
+    settings: partSettings
   },
   {
     id: generateUniqId(),

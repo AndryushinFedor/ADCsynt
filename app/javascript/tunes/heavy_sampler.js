@@ -144,15 +144,8 @@ const partNode = new Tone.Part(function (time, note) {
 partNode.loopEnd = '2m'
 partNode.loop = true
 
-const instrument = [
-  {
-    id: generateUniqId(),
-    name: 'Sequencer',
-    type: 'Sequencer',
-    node: partNode,
-    settings: partSettings
-  },
-  {
+const instrument = [  
+    {
     id: generateUniqId(),
     name: 'Heavy Sampler',
     type: 'Sampler',
@@ -165,6 +158,13 @@ const instrument = [
     type: 'FreeverbEffect',
     node: freeverbNode,
     settings: freeverbSettings
+  },
+  {
+    id: generateUniqId(),
+    name: 'Sequencer',
+    type: 'Sequencer',
+    node: partNode,
+    settings: partSettings
   },
   {
     id: generateUniqId(),
