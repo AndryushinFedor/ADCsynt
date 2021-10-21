@@ -1,0 +1,24 @@
+.Button {
+  padding: 16px 20px;
+  font-size: 144px;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.Button:hover {
+    animation: change-background 0.3s infinite;
+  }
+
+@keyframes change-background {
+    0% {
+      background-color: #ffffff;
+    }
+
+    100% {
+      background-color: #ff002b;
+    }
+  }
+}

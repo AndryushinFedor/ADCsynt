@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types'
 import React, { PureComponent } from 'react'
-
 import Button from '../control_components/Button'
 
 export default class WelcomeScreen extends PureComponent {
   constructor(props) {
     super(props)
   }
+
+
 
   render() {
     const { handleStartWebAudio } = this.props
@@ -22,3 +23,5 @@ export default class WelcomeScreen extends PureComponent {
 WelcomeScreen.propTypes = {
   handleStartWebAudio: PropTypes.func.isRequired
 }
+
+
